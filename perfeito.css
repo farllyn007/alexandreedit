@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Roboto&family=Rock+Salt&display=swap');
+
+$offwhite: #FAF9F6;
+$grey: #2C2C2C;
+$white: #FFFFFF;
+$black: #000000;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: $offwhite;
+  margin: 6rem 2rem;
+  font-family: "Arial", sans-serif;
+}
+
+p {
+  font-size: 13px;
+  line-height: 1.4em;
+  text-align: justify;
+}
+
+.spread {
+  display: grid;
+  grid-template-columns: minmax(400px, 1.4fr) minmax(400px, 1fr);
+  width: 100%;
+  box-shadow: 0 5px 15px hsla(0, 0, 50%, 0.5);
+  margin: 1em auto;
+
+  .left {
+    background: $black;
+    background-image: url("https://assets.codepen.io/406785/landscape.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    box-shadow: inset 0 0 5em 1em #000;
+  }
+
+  .right {
+    background: $white;
+    padding: 0 3em 0;
+  }
+}
+
+.title {
+  text-align: center;
+  max-width: 500px;
+  margin: 4rem auto;
+  font-size: 2.5rem;
+  font-family: 'Lora', serif;
+}
+
+hr {
+  color: $grey;
+  margin-bottom: 3rem;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 2vw;
+}
+
+.spread__page-bottom {
+  margin-top: 4em;
+  position: relative;
+  
+  .number {
+    padding: 1em;
+    background: $grey;
+    text-align: center;
+    color: $white;
+    width: 4em;
+    margin: 0 auto;
+    font-size: .5rem;
+  }
+}
